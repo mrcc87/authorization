@@ -33,9 +33,28 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
+######## Added by me ######## 
+# Added bootstrap-rails gem
+gem 'bootstrap', '~> 4.0.0'
+
+# Added jquery-rails gem
+gem 'jquery-rails'
+
+# Added devise gem for authentication
+gem 'devise'
+
+# Added cancancan gem for authorization
+gem 'cancancan', '~> 2.0'
+
+
+
+######## Added by me ######## 
+#
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
