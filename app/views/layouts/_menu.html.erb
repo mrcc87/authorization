@@ -32,6 +32,8 @@
         <%= button_to "Sign out", destroy_user_session_path, method: 'delete', class: 'btn btn-outline-info my-2 my-sm-0', type: 'submit' %>
       <% else %>
         <%= button_to "Sign in", new_user_session_path, method: 'get', class: 'btn btn-outline-info my-2 my-sm-0', type: 'submit' %>
+       | 
+        <%= button_to "Sign up", new_user_registration_path, method: 'get', class: 'btn btn-outline-info my-2 my-sm-0', type: 'submit' %>
       <% end %>
     </div>
   </div>
