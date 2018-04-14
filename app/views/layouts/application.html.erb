@@ -10,10 +10,10 @@
   </head>
 
   <body>
-    <%= render "layouts/menu" %>
+    <% if !current_page?(controller: 'devise/registrations', action: 'new') %>
+      <%= render "layouts/menu" %>
+    <% end %>
     <%= render "layouts/flash" %>
-    <div class="container">
       <%= yield %>
-    </div>
   </body>
 </html>

@@ -3,4 +3,32 @@
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  //border: 2px solid #79589f;
+  .signin-password {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .signin-password-confirmation {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .btn-primary {
+    background-color: #79589f;
+    border-color: #79589f;
+  }
+
+
+  a, a:hover {
+    color: #79589f;
+  }
+}
+
+.form-signin-page-wrapper {
+  min-height: 100%;
+  background-color: #534292;
+  color: #79589f;
+  padding-top: 120px;
 }
