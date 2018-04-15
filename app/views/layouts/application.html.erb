@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <% if !current_page?(controller: 'devise/registrations', action: 'new') %>
+    <% if (params[:controller] != 'devise/registrations' && params[:controller] != 'devise/sessions') %>
       <%= render "layouts/menu" %>
     <% end %>
     <%= render "layouts/flash" %>

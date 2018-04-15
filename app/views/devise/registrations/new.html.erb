@@ -11,8 +11,8 @@
 
       <div class="field">
         <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
+          <p>(<%= @minimum_password_length %> characters minimum)</p>
+        <% end %>
         <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control signin-password" %>
       </div>
 
@@ -23,7 +23,7 @@
       <br>
 
       <div class="actions">
-        <%= f.submit "Sign up", class: "btn btn-primary btn-block" %>
+        <%= f.submit "Sign up", class: "btn btn-heroku btn-block" %>
       </div>
     <% end %>
 
