@@ -15,7 +15,9 @@
 
 }
 
-.form-signin {
+// SIGNUP
+
+.form-signup {
   width: 100%;
   max-width: 330px;
   padding: 15px;
@@ -23,11 +25,11 @@
   background-color: white;
   border-radius: 5px;
   //border: 2px solid #79589f;
-  .signin-password {
+  .signup-password {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
-  .signin-password-confirmation {
+  .signup-password-confirmation {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
   }
@@ -37,9 +39,37 @@
   }
 }
 
-.form-signin-page-wrapper {
+.form-signup-page-wrapper {
   min-height: 100%;
   background-color: #534292;
   color: #79589f;
   padding-top: 120px;
+}
+
+
+// SIGNIN
+.form-signin {
+  @extend .form-signup;
+  .signin-email {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .signin-password {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+}
+
+.form-signin-page-wrapper {
+  @extend .form-signup-page-wrapper;
+}
+
+//FORGOT PASSWORD
+
+.form-forgot-password {
+  @extend .form-signup;
+}
+
+.form-forgot-password-page-wrapper {
+  @extend .form-signup-page-wrapper;
 }

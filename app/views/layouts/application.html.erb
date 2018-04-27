@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <% if (params[:controller] != 'devise/registrations' && params[:controller] != 'devise/sessions') %>
+    <% if (params[:controller] != 'devise/registrations' && params[:controller] != 'devise/sessions' && params[:controller] != 'devise/passwords') %>
       <%= render "layouts/menu" %>
     <% end %>
     <%= render "layouts/flash" %>

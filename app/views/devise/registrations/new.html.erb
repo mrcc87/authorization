@@ -1,8 +1,8 @@
-<div class="form-signin-page-wrapper">
-  <div class="text-center form-signin">
+<div class="form-signup-page-wrapper">
+  <div class="text-center form-signup">
     <h1 class="h3 mb-3 font-weight-normal">Sign up</h1>
 
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'form-signin') do |f| %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'form-signup') do |f| %>
       <%= devise_error_messages! %>
 
       <div class="field">
@@ -13,11 +13,11 @@
         <% if @minimum_password_length %>
           <p>(<%= @minimum_password_length %> characters minimum)</p>
         <% end %>
-        <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control signin-password" %>
+        <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control signup-password" %>
       </div>
 
       <div class="field">
-        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", class: "form-control signin-password-confirmation" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", class: "form-control signup-password-confirmation" %>
       </div>
 
       <br>
